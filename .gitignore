@@ -21,3 +21,14 @@ $RECYCLE.BIN/
 # =========================
 # Operating System Files
 # =========================
+/package-lock.json
+/node_modules/
+.idea/ab_ma_cu.iml
+.idea/cssxfire.xml
+.idea/encodings.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/jsLibraryMappings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+production/css/maps/production_pure_pf.css.map

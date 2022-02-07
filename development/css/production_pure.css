@@ -1,0 +1,747 @@
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+footer,header,section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+
+figcaption,figure,main {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+
+a:active,a:hover {
+  outline-width: 0;
+}
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+input {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+html [type="button"],[type="reset"],[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+/* Scripting
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+/**
+ * Add the correct display in IE.
+ */
+
+/* Hidden
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10-.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal, * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/Avenir/AvenirLTStd-Black.otf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/Avenir/AvenirLTStd-Book.otf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/Avenir/AvenirLTStd-Roman.otf");
+  font-display: swap;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  /*    font-smoothing: antialiased;*/
+}
+
+html,input {
+  color: #222;
+}
+
+body {
+  font-size: 1em;
+  line-height: 1.5;
+  font-family: 'AvenirLTStd-Black.otf', sans-serif;
+  /*background: var(--primary_yellow);
+    background-image: url("../img/Home_375.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;*/
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+:root {
+  --primary_yellow: #fbf8e9;
+  --header-color: #1f1f1f;
+  --text-color: #333;
+  --header--height--mobile: 169px;
+  --gradient: linear-gradient(180deg, #fbf8e9 85%, #fff 85%);
+  --section--bgsize: 75% auto;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  background: var(--primary_yellow);
+  padding: 5vmax 0 0 0;
+  height: var(--header--height--mobile);
+}
+
+header h1 {
+  background: transparent url("../img/logo_complete.svg") no-repeat 0 0;
+  background-size: contain;
+  color: #1f1f1f;
+  margin: 0 auto;
+  width: 101px;
+  height: 103px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+main {
+  scroll-snap-type: y mandatory;
+}
+
+main section h1 {
+  margin: 0 auto;
+  /*! padding:0 20px; */
+  font-family: 'AvenirLTStd-Book.otf', sans-serif;
+  font-size: 1.875em;
+  letter-spacing: -1px;
+  line-height: 33px;
+  text-align: center;
+  color: var(--header-color);
+  width: 280px;
+}
+
+main section:not(:first-of-type) h1 {
+  color: var(--text-color);
+  padding-top: 5vmax;
+}
+
+main p {
+  font-family: 'AvenirLTStd-Roman', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 3.75vmax auto;
+  text-align: center;
+  width: 280px;
+}
+
+main a {
+  text-decoration: underline;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+main ul,footer ul {
+  width: 285px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto 0 auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+main img {
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  font-size: .625em;
+}
+
+main section:first-of-type {
+  height: calc(100vh - var(--header--height--mobile));
+  background: url("../img/20---iPhone-12-Pro-Perspective-Style-Left-&-Right_mobile.png") no-repeat 50% 100%,                var(--gradient);
+  background-size: 25vmax auto;
+}
+
+main section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.share {
+  background: url("../img/iphone_home_screen.png") no-repeat 50% 100%,                var(--gradient);
+  background-size: var(--section--bgsize);
+}
+
+.treasures {
+  background: url("../img/iphone_home_screen2.png") no-repeat 50% 100%,    var(--gradient);
+  background-size: var(--section--bgsize);
+}
+
+.money {
+  background: url("../img/iphone_front_1.png") no-repeat 50% 100%,     var(--gradient);
+  background-size: var(--section--bgsize);
+}
+
+.planet {
+  background: url("../img/iphone_home_screen3.png") no-repeat 50% 100%,    var(--gradient);
+  background-size: var(--section--bgsize);
+}
+
+.story,.in-touch {
+  background: var(--primary_yellow);
+  height: auto;
+}
+
+.in-touch form {
+  width: 280px;
+  margin: 1em auto 0 auto;
+}
+
+.in-touch input {
+  width: inherit;
+  margin-bottom: 1em;
+  padding: .5em;
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+  transition: all .25s linear 0s;
+  outline: solid 2px transparent;
+}
+
+.in-touch input:focus {
+  outline: solid 2px #e0b75b;
+  outline-offset: 5px;
+  transition: all .25s linear 0s;
+}
+
+input:focus::placeholder {
+  color: transparent;
+  transition: all .25s linear 0s;
+}
+
+.in-touch input[type="submit"] {
+  background: var(--text-color);
+  color: #fff;
+}
+
+figure {
+  margin: 1em 1em 0 1em;
+}
+
+.bold--text {
+  font-weight: bold;
+}
+
+footer {
+  background: #1f1f1f;
+  color: #fff;
+  padding-bottom: 1em;
+}
+
+.footer--first--para {
+  width: 285px;
+  margin: 0 auto 1em auto;
+  font-size: 2em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.social--platforms,.t--and--cs {
+  margin: 1em auto;
+  width: 285px;
+  font-size: .75em;
+}
+
+.social--platforms li {
+  background: #fff;
+  padding: .25em;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+}
+
+.t--and--cs {
+  text-align: center;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,(-o-min-device-pixel-ratio: 5/4),(-webkit-min-device-pixel-ratio: 1.25),(min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+  a[href^="javascript:"]:after,  a[href^="#"]:after {
+    content: "";
+  }
+
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+@page {
+    margin: 0.5cm;
+}
+
+  p,  h2,  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,  h3 {
+    page-break-after: avoid;
+  }
+}
