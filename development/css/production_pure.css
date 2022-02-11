@@ -438,9 +438,10 @@ img {
   --primary_yellow: #fbf8e9;
   --header-color: #1f1f1f;
   --text-color: #333;
-  --header--height--mobile: 169px;
-  --gradient: linear-gradient(180deg, #fbf8e9 85%, #fff 85%);
-  --section--bgsize: 75% auto;
+  --header--height--mobile: 120px;
+  --linear-gradient: linear-gradient(180deg, #fbf8e9 85%, #fff 85%);
+  --solid-white-bg: #fff;
+  --section--bgsize: 65% auto;
 }
 
 * {
@@ -451,7 +452,7 @@ img {
 
 header {
   background: var(--primary_yellow);
-  padding: 5vmax 0 0 0;
+  padding: 0;
   height: var(--header--height--mobile);
 }
 
@@ -509,7 +510,7 @@ main ul,footer ul {
   width: 285px;
   list-style-type: none;
   padding: 0;
-  margin: 0 auto 0 auto;
+  margin: 1em auto 0 auto;
   display: flex;
   flex-flow: row;
   justify-content: space-between;
@@ -526,33 +527,36 @@ figcaption {
 
 main section:first-of-type {
   height: calc(100vh - var(--header--height--mobile));
-  background: url("../img/20---iPhone-12-Pro-Perspective-Style-Left-&-Right_mobile.png") no-repeat 50% 100%,                var(--gradient);
-  background-size: 25vmax auto;
+  background-image: url("../img/20---iPhone-12-Pro-Perspective-Style-Left-&-Right_mobile.png");
+  background-color: var(--linear-gradient);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 23vmax auto;
 }
 
 main section {
   height: 100vh;
-  scroll-snap-align: start;
+  transition: all .25s linear 0s;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-color: var(--solid-white-bg);
+  background-size: var(--section--bgsize);
 }
 
 .share {
-  background: url("../img/iphone_home_screen.png") no-repeat 50% 100%,                var(--gradient);
-  background-size: var(--section--bgsize);
+  background-image: url("../img/iphone_home_screen.png");
 }
 
 .treasures {
-  background: url("../img/iphone_home_screen2.png") no-repeat 50% 100%,    var(--gradient);
-  background-size: var(--section--bgsize);
+  background-image: url("../img/iphone_home_screen2.png");
 }
 
 .money {
-  background: url("../img/iphone_front_1.png") no-repeat 50% 100%,     var(--gradient);
-  background-size: var(--section--bgsize);
+  background-image: url("../img/iphone_front_1.png");
 }
 
 .planet {
-  background: url("../img/iphone_home_screen3.png") no-repeat 50% 100%,    var(--gradient);
-  background-size: var(--section--bgsize);
+  background-image: url("../img/iphone_home_screen3.png");
 }
 
 .story,.in-touch {
@@ -603,30 +607,51 @@ figure {
 footer {
   background: #1f1f1f;
   color: #fff;
-  padding-bottom: 1em;
+  /*! padding-bottom:1em; */
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
 }
 
 .footer--first--para {
   width: 285px;
-  margin: 0 auto 1em auto;
-  font-size: 2em;
-  font-weight: 600;
+  margin: 0 auto;
+  font-size: 1.8em;
+  font-weight: 400;
   text-align: center;
 }
 
-.social--platforms,.t--and--cs {
+.social--platforms:before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  height: 1px;
+  width: 100%;
+  background: #fff;
+  left: 0;
+  z-index: 1;
+}
+
+.social--platforms {
+  display: flex;
+  flex-flow: column;
   margin: 1em auto;
   width: 285px;
   font-size: .75em;
+  position: relative;
 }
 
 .social--platforms li {
   background: #fff;
-  padding: .25em;
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto;
   text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  border-radius: 50%;
 }
 
 .t--and--cs {
@@ -686,8 +711,98 @@ footer {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 568px) {
+  main section:first-of-type {
+    height: calc(100vmax);
+    background-size: 43vmax;
+  }
+
+  main section:not(:first-of-type) {
+    background-size: 100px auto;
+    background-position: 10% 25%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  :root {
+    --section--bgsize--mw768: 38vw auto;
+  }
+
+  main section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    background-size: var(--section--bgsize--mw768);
+  }
+
+  main section:first-of-type {
+    background-color: var(--linear-gradient);
+    background-image: url("../img/20---iPhone-12-Pro-Perspective-Style-Left-&-Right_dtop.png");
+    background-size: var(--section--bgsize--mw768);
+    background-position: 89% 25%;
+    height: auto;
+  }
+
+  main section.share {
+    background-image: url("../img/share.png");
+    background-size: var(--section--bgsize--mw768);
+  }
+
+  main section.treasures {
+    background-image: url("../img/treasures.png");
+    background-size: var(--section--bgsize--mw768);
+    background-position: 89% 25%;
+  }
+
+  main section.money {
+    background-image: url("../img/money.png");
+    background-size: var(--section--bgsize--mw768);
+  }
+
+  main section.planet {
+    background-image: url("../img/onePlanet.png");
+    background-size: var(--section--bgsize--mw768);
+    background-position: 89% 25%;
+  }
+
+  main section div {
+    padding: 12.5vw;
+  }
+
+  main .story div {
+    padding: 5vw;
+    grid-row: 1/2;
+  }
+
+  main section:not(:first-of-type).in-touch {
+    display: block;
+    background: #F7EFB4 url("../img/WoodBlocksIcon.png") no-repeat;
+    background-size: 190px auto;
+    background-position: 25%;
+  }
+
+  .in-touch div {
+    padding: 0;
+    margin-left: 50%;
+  }
+
+  main section:nth-child(even) div {
+    grid-column: 2/3;
+  }
+
+  figure {
+    grid-row: 1/2;
+    margin: auto 1em;
+  }
+
+  form {
+    display: flex;
+    flex-flow: row;
+  }
+
+  input {
+    margin: 0 .5em;
+  }
 }
 
 @media print,(-o-min-device-pixel-ratio: 5/4),(-webkit-min-device-pixel-ratio: 1.25),(min-resolution: 120dpi) {

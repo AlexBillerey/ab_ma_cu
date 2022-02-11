@@ -51,6 +51,8 @@ module.exports = function (grunt) {
                     //require('autoprefixer'),/*({browsers: 'last 2 versions'})*//*({browsers: 'last 2 versions'})*/ // add vendor prefixes - NOT NEEDED AS CONFIG NOW DONE USING PACKAGE.JSON
                     require('postcss-merge-rules')(),
                     require('cssnano')(),
+                    //require('postcss-custom-properties')(/* pluginOptions */),
+                    require('postcss-simple-vars')(),               // Variables, a must
 
                 ]
             },
